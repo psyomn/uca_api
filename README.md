@@ -9,7 +9,7 @@
 
 ## Description
 
-TODO: Description
+Currently this gem only supports the UCA API.
 
 ## Features
 

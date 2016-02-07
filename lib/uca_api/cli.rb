@@ -1,4 +1,4 @@
-module PowertabApi
+module UcaApi
   module Cli
   end
 end
