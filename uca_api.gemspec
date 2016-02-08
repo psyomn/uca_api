@@ -2,17 +2,17 @@
 
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'powertab_api/version'
+require 'uca_api/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "powertab_api"
-  gem.version       = PowertabApi::VERSION
+  gem.name          = "uca_api"
+  gem.version       = UcaApi::VERSION
   gem.summary       = %q{TODO: Summary}
   gem.description   = %q{TODO: Description}
   gem.license       = "MIT"
   gem.authors       = ["psyomn"]
   gem.email         = "lethaljellybean@gmail.com"
-  gem.homepage      = "https://github.com/psyomn/powertab_api#readme"
+  gem.homepage      = "https://github.com/psyomn/uca_api#readme"
 
   gem.files         = `git ls-files`.split($/)
 

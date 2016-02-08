@@ -13,8 +13,8 @@ if File.directory?(File.join(root,'.git'))
   end
 end
 
-require 'powertab_api'
+require 'uca_api'
 
-include PowertabApi
+include UcaApi
 
-PowertabApi::artists
+UcaApi::artists
