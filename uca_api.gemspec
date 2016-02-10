@@ -7,8 +7,8 @@ require 'uca_api/version'
 Gem::Specification.new do |gem|
   gem.name          = "uca_api"
   gem.version       = UcaApi::VERSION
-  gem.summary       = %q{TODO: Summary}
-  gem.description   = %q{TODO: Description}
+  gem.summary       = %q{Interface to UCA's API}
+  gem.description   = %q{This interface's to the UCA api, and performs simple requests}
   gem.license       = "MIT"
   gem.authors       = ["psyomn"]
   gem.email         = "lethaljellybean@gmail.com"
