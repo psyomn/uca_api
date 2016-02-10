@@ -6,11 +6,13 @@ module UcaApi
     # returns nil.
     def self.read_default_key_from_file
       path = File.join(ENV['HOME'], '.config', 'uca_api', 'key')
-      File.open(path) { |ff| ff.read }
+      File.open(path) { |ff| ff.read }.strip
     rescue
       nil
     end
 
-    Key = ENV['UCA_API_KEY'] || UcaApi::Config::read_default_key_from_file || :undefined
+    Key = ENV['UCA_API_KEY'] ||
+      UcaApi::Config::read_default_key_from_file ||
+      :undefined
   end
 end

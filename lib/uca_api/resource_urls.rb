@@ -7,10 +7,10 @@ module UcaApi
   Compositions = "uca-compositions/%s/%s" # key, pattern
 
   def self.make_artists_url(pattern)
-    "#{Base}/#{Artists}" % [::Config::Key, pattern]
+    "#{Base}/#{Artists}" % [Config::Key, pattern]
   end
 
   def self.make_compositions_url(pattern)
-    "#{Base}/#{Compositions}" % [::Config::Key, pattern]
+    "#{Base}/#{Compositions}" % [Config::Key, pattern]
   end
 end
