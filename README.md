@@ -1,34 +1,31 @@
-# powertab_api
+# UCA API Gem
 
 * [Homepage](https://github.com/psyomn/powertab_api#readme)
 * [Issues](https://github.com/psyomn/powertab_api/issues)
 * [Documentation](http://rubydoc.info/gems/powertab_api/frames)
 * [Email](mailto:lethaljellybean at gmail.com)
 
-[![Build Status](https://secure.travis-ci.org/psyomn/powertab_api.svg?branch=master)](https://travis-ci.org/psyomn/powertab_api)
+## Installing
+
+    rake install
 
 ## Description
 
-Currently this gem only supports the UCA API.
+Only supports the UCA API.
 
-## Features
+You can use this gem programmatically.
 
-## Examples
+You need a UCA API key in order to use this gem. There's two ways you can go
+about this. You can:
 
-    require 'powertab_api'
+* prepend environment variables in the following form: `UCA_API_KEY=key uca_api
+  --songs pattern`
 
-## Requirements
+* store your key in the following file: `$HOME/.config/uca_api/key`
 
-## Install
+Example commands:
 
-    $ gem install powertab_api
+    uca_api --songs love
 
-## Synopsis
+    uca_api --artists blackwater
 
-    $ powertab_api
-
-## Copyright
-
-Copyright (c) 2016 psyomn
-
-See LICENSE.txt for details.
