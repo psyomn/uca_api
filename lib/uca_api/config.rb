@@ -1,5 +1,6 @@
+require 'uca_api'
 module UcaApi
   module Config
-    Key = ENV['POWERTAB_KEY'] || :undefined
+    Key = ENV['UCA_API_KEY'] || :undefined
   end
 end

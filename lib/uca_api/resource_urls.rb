@@ -1,3 +1,4 @@
+require 'uca_api'
 module UcaApi
   include Config
 
@@ -5,11 +6,11 @@ module UcaApi
   Artists = "uca-artists/%s/%s" # key, letter param
   Compositions = "uca-compositions/%s/%s" # key, pattern
 
-  def self.make_artists_url(letter)
-    "#{Base}/#{Artists}" % [Config::Key, letter]
+  def self.make_artists_url(pattern)
+    "#{Base}/#{Artists}" % [Config::Key, pattern]
   end
 
-  def self.make_compositions_url(letter)
-    "#{Base}/#{Compositions}" % [Config::Key, letter]
+  def self.make_compositions_url(pattern)
+    "#{Base}/#{Compositions}" % [Config::Key, pattern]
   end
 end

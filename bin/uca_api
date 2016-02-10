@@ -14,7 +14,19 @@ if File.directory?(File.join(root,'.git'))
 end
 
 require 'uca_api'
+require 'slop'
 
 include UcaApi
 
-UcaApi::artists
+Slop.parse do
+  on :a, :artists, arguments: :required
+  on :s, :songs, arguments: :required
+
+  run do |opts,args|
+    if opts[:artists]
+      UcaApi::artists(args.first)
+    elsif opts[:songs]
+      UcaApi::songs(args.first)
+    end
+  end
+end
